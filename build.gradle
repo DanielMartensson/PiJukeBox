@@ -11,11 +11,28 @@ plugins {
     id 'java-library'
 }
 
+apply plugin: 'eclipse'
+version = '1.0'
+
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
+
+//create a single Jar with all dependencies
+// Execute: gradlew fatJar
+task fatJar(type: Jar) {
+	manifest {
+        attributes 'Implementation-Title': 'Gradle Jar File Example',  
+        	'Implementation-Version': version,
+        	'Main-Class': 'se.danielmartensson.pijukebox.Main'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
 
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
@@ -29,5 +46,7 @@ dependencies {
     
     compile group: 'com.googlecode.soundlibs', name: 'basicplayer', version: '3.0.0.0'
     testCompile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
-
-}
+	//compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.29'
+	testCompile group: 'org.slf4j', name: 'slf4j-jdk14', version: '1.7.29'
+	compile group: 'com.pi4j', name: 'pi4j-core', version: '1.2'
+}	
