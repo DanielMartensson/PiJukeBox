@@ -7,6 +7,17 @@ wires is begun to lose its isolators.
 
 So I installed a Raspberry Pi B+ and OpenJDK 8 and Pi4J inside this radio and then it become a juke box.
 
+```
+Features:
+* Autoplaying next song
+* 60 songs included (around 1930-1950)
+* Volume tuning
+* Song select
+* 3 Song bands
+* Low power consumption. Works with old Raspberry Pi:s.
+* Terminal based. No TV screen need to be used
+```
+
 
 ![a](https://raw.githubusercontent.com/DanielMartensson/PiJukeBox/master/Radio.jpg)
 
@@ -16,7 +27,8 @@ So I installed a Raspberry Pi B+ and OpenJDK 8 and Pi4J inside this radio and th
 * MPC3008 10 bit ADC
 * MCP23017 IO-expander for the LCD
 * 1602 LCD
-* 10K potentiometer
+* 10K potentiometer for tuning song (does not matter which resistance you choose)
+* 2M potentiometer for volume (does not matter which resistance you choose)
 * Turn button 3-way
 * PC speakers with Aux cable
 * 5 Volt Micro USB charger
