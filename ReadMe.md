@@ -44,7 +44,7 @@ Step 4: Open rc.local in ```/etc/rc.local```
 sudo nano /etc/rc.local
 // Paste this above exit 0
 cd /home/pi/your/folder/PiJukeBox-all-1.0.jar
-java -jar PiJukeBox-all-1.0.jar & // importat with &, else it will stop here
+java -jar PiJukeBox-all-1.0.jar & // important with &, else it will stop here
 ```
 
 Step 5: Change OpenJDK 8 like this and save
