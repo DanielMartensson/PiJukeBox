@@ -21,6 +21,13 @@ Features:
 
 ![a](https://raw.githubusercontent.com/DanielMartensson/PiJukeBox/master/Radio.jpg)
 
+![a](https://raw.githubusercontent.com/DanielMartensson/PiJukeBox/master/Inside.jpg)
+
+![a](https://raw.githubusercontent.com/DanielMartensson/PiJukeBox/master/Lcd.jpg)
+
+![a](https://raw.githubusercontent.com/DanielMartensson/PiJukeBox/master/Swastika.jpeg)
+
+
 ## Electical compontents if you want to build your own
 ```
 * Raspberry
