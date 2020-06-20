@@ -18,7 +18,7 @@ Features:
 * Terminal based. No TV screen need to be used
 ```
 
-Pictures and the shortest movie Film.mp4 uploaded:
+Pictures and the short movie Film.mp4 uploaded:
 
 ![a](https://raw.githubusercontent.com/DanielMartensson/PiJukeBox/master/Radio.jpg)
 
@@ -67,7 +67,7 @@ cd /home/pi/your/folder/PiJukeBox-all-1.0.jar
 java -jar PiJukeBox-all-1.0.jar & // important with &, else it will stop here
 ```
 
-Step 5: Change OpenJDK 8 like this and save
+Step 5: Change OpenJDK 8(or OpenJDK 11) like this and save
 ```
 sudo nano /etc/java-8-openjdk/sound.properties
 
